@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 export class Counter extends Component {
   constructor(props){
     super(props);
-    this.state = { clicks: props.initialAmount, list: [{id:1, name: "Deepika"}, {id: 2, name: "Maha"}]}
+    this.state = { clicks: props.initialAmount, list: [{id:1, name: "Deepika"}, {id: 2, name: "Maha"}, {id: 3, name: "Raju"}]}
   }
   componentDidMount() {
     console.log("componentDidMount");
