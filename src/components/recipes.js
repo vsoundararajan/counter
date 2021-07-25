@@ -1,7 +1,7 @@
 const recipes = [
   {
     id: 1,
-    name: "Plain Pongal",
+    name: "Venn Pongal",
     servings: 3,
     cookTime: "1:45",
     instructions: [
