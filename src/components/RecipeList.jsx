@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Recipe from './Recipe';
+import { RecipeContext } from "./App";
 
-export default function RecipeList({recipes, handleRecipeAddClick, handleDeleteClick}) {
+export default function RecipeList({recipes, handleRecipeDeleteClick}) {
+  const { handleRecipeAddClick } = useContext(RecipeContext);
   const renderRecipes = (recipes) => {
     return recipes.map( (recipe) => {
-      return ( <Recipe key={recipe.id} {...recipe} handleDeleteClick={handleDeleteClick} />)
+      return ( <Recipe key={recipe.id} {...recipe} />)
     })
   }
   return (
