@@ -3,12 +3,15 @@ import IngredientsList from "./IngredientsList";
 
 export default function Recipe(props) {
   const {
+    id,
     name,
     cookTime,
     servings,
     instructions,
-    ingredients
+    ingredients,
+    handleDeleteClick
   } = props;
+  console.log("recipe id = ", id);
   const getInstructions = (instructions) => {
     return instructions.map( (instruction, index) => {
       return <li key={index} >{instruction}</li>
@@ -21,7 +24,7 @@ export default function Recipe(props) {
         <h3 className="recipe__title">{name}</h3>
         <div className="recipe__action__buttons">
           <button className="btn btn--primary mr-1">Edit</button>
-          <button className="btn btn--danger">Delete</button>
+          <button className="btn btn--danger" onClick={() => handleDeleteClick(id)}>Delete</button>
         </div>
         <div className="recipe_row">
           <span className="recipe__label">Cook Time:</span>
