@@ -47,6 +47,7 @@
 }
 .recipe__value {
   font-weight: 300;
+  text-align: left;
 }
 
 .recipe__action__buttons {

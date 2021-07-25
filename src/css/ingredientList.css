@@ -1,4 +1,5 @@
 .ingredient-grid {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 50%);
+  border-bottom: #D5D8DC solid 1px;
 }
